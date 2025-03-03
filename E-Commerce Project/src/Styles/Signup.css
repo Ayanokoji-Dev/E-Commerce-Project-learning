@@ -1,0 +1,76 @@
+.signUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(135deg,rgb(110, 196, 224),rgb(214, 110, 224));
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-background);
+    border: 2px solid var(--border-color);
+    padding: 2rem;
+    width: 40%;
+    height: 80%;
+    border-radius: 4px;
+    z-index: 2;
+}
+.container .firstContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .firstContainer form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container input{
+    width: 80%;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    outline: none;
+}
+.container .submitButton{
+    width: 80%;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    font-size: large;
+    color: var(--button-text-color);
+    text-align: center;
+    background: linear-gradient(135deg,rgb(110, 196, 224),rgb(214, 110, 224));
+    cursor: pointer;
+}
+
+.container .secondContainer {
+    display: flex;
+    gap: 1rem;
+}
+.container .secondContainer .accountSection{
+    color: var(--link-color);
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+}
+.container .secondContainer .accountSection:hover{
+    color: var(--link-hover-color);
+}
+
+.error{
+    color: red;
+    font-size: large;
+    font-weight: 600;
+}

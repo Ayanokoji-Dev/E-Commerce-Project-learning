@@ -1,0 +1,12 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background-color: var(--navbar-background);
+    border-radius: 30px;
+    padding: 1rem;
+}
+.navbar a{
+    color: var(--link-color);
+}

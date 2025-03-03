@@ -1,0 +1,114 @@
+:root {
+  /* الألوان الأساسية */
+  --primary-color: #1a73e8; /* اللون الأساسي المستخدم في الأزرار والعناصر التفاعلية */
+  --primary-light-color: #2f7ce0; /* اللون الأساسي المستخدم في الأزرار والعناصر التفاعلية */
+  --secondary-color: #fbbc05; /* اللون الثانوي المستخدم في التمييز أو التنبيهات */
+  --background-color: #ffffff; /* لون خلفية الصفحة */
+  --text-color: #1a1a1a; /* لون النصوص الرئيسية */
+  --muted-text-color: #757575; /* لون النصوص الثانوية أو الأقل أهمية */
+  --border-color: #e0e0e0; /* لون الحدود للعناصر المختلفة */
+
+  /* الحقول والأزرار */
+  --input-background: #f9f9f9; /* لون خلفية الحقول (input fields) */
+  --input-border: #cccccc; /* لون حدود الحقول */
+  --input-text-color: #333333; /* لون النصوص داخل الحقول */
+
+  --button-background: #1a73e8; /* لون خلفية الأزرار */
+  --button-text-color: #ffffff; /* لون النصوص داخل الأزرار */
+  --button-hover-background: #1558b0; /* لون خلفية الأزرار عند التمرير عليها */
+
+  /* الشريط العلوي والقائمة */
+  --header-background: #f5f5f5; /* لون خلفية الشريط العلوي (Header) */
+  --navbar-background: #ffffff; /* لون خلفية شريط التنقل (Navbar) */
+
+  /* الروابط */
+  --link-color: #1a73e8; /* لون الروابط */
+  --link-hover-color: #004aad; /* لون الروابط عند التمرير عليها */
+
+  /* البطاقات */
+  --card-background: #ffffff; /* لون خلفية البطاقات */
+  --card-border-color: #e0e0e0; /* لون حدود البطاقات */
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل البطاقات لإضافة تأثير ثلاثي الأبعاد */
+
+  /* الظلال */
+  --box-shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1); /* ظل خفيف للعناصر */
+  --box-shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.15); /* ظل متوسط للعناصر */
+  --box-shadow-heavy: 0 8px 10px rgba(0, 0, 0, 0.2); /* ظل ثقيل للعناصر */
+
+  /* النصوص */
+  --heading-color: #333333; /* لون العناوين */
+  --paragraph-color: #757575; /* لون النصوص العادية */
+
+  /* المسافات */
+  --spacing-small: 8px; /* المسافة الصغيرة بين العناصر */
+  --spacing-medium: 16px; /* المسافة المتوسطة بين العناصر */
+  --spacing-large: 24px; /* المسافة الكبيرة بين العناصر */
+
+  /* الحواف */
+  --border-radius: 4px; /* الزوايا المستديرة العامة للعناصر */
+  --card-border-radius: 8px; /* الزوايا المستديرة للبطاقات */
+  --button-border-radius: 4px; /* الزوايا المستديرة للأزرار */
+
+  --change-theme-background:#121212;
+  --change-theme-color:#e0e0e0;
+}
+
+[data-theme="dark"] {
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+  --primary-color: #bb86fc;
+  --primary-light-color: #c89ffa;
+  --secondary-color: #03dac6;
+  --muted-text-color: #aaaaaa;
+  --border-color: #333333;
+
+  --input-background: #333333;
+  --input-border: #444444;
+  --input-text-color: #e0e0e0;
+
+  --header-background: #1f1f1f;
+  --navbar-background: #1a1a1a;
+
+  --link-color: #bb86fc;
+  --link-hover-color: #3700b3;
+
+  --button-background: #6200ee;
+  --button-text-color: #ffffff;
+  --button-hover-background: #3700b3;
+
+  --card-background: #1e1e1e;
+  --card-border-color: #444444;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+  --box-shadow-light: 0 1px 3px rgba(255, 255, 255, 0.1);
+  --box-shadow-medium: 0 4px 6px rgba(255, 255, 255, 0.15);
+  --box-shadow-heavy: 0 8px 10px rgba(255, 255, 255, 0.2);
+
+  --change-theme-background:#ffffff;
+  --change-theme-color:#1a1a1a;
+}
+
+
+
+body{
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a{
+  color: var(--link-color);
+  text-decoration: none;
+}
+a:hover{
+  color: var(--link-hover-color);
+}
+
+main{
+  min-height: 80vh;
+}

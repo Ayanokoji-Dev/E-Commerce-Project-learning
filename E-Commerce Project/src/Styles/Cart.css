@@ -1,0 +1,85 @@
+.cart{
+    min-height: 50vh;
+}
+.cart .titles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart .titles div{
+    text-align: left;
+    color: var(--text-color);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.cart .titles .productsTitle{
+    width: 10%;
+}
+.cart .titles .titleTitle{
+    width: 30%;
+}
+.cart .titles .priceTitle{
+    width: 20%;
+}
+.cart .titles .quantityTitle{
+    width: 10%;
+}
+.cart .titles .totalTitle{
+    width: 20%;
+}
+.cart .titles .removeTitle{
+    width: 10%;
+}
+.cart .products {
+    display: flex;
+    flex-direction: column; /* ترتيب العناصر بشكل عمودي */
+    gap: 1rem; /* مسافة بين كل صف */
+    width: 100%;
+    max-height: 40vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.cart .products::-webkit-scrollbar {
+    display: none; /* إخفاء شريط التمرير في كروم */
+}
+
+.cart .products .product {
+    display: flex;
+    justify-content: space-between; /* توزيع المحتوى داخل كل منتج */
+    align-items: center;
+    width: 100%; /* تأكد أن المنتج يغطي العرض الكامل */
+    min-height: 4rem;
+}
+
+
+.cart .products .product .productImage {
+    width: 10%;
+    overflow-y: hidden;
+}
+.cart .products .product .productTitle {
+    width: 30%;
+}
+.cart .products .product .productPrice {
+    width: 20%;
+}
+.cart .products .product .productQuantity {
+    width: 10%;
+}
+.cart .products .product .productTotal {
+    width: 20%;
+}
+.cart .products .product .productRemove {
+    width: 10%;
+}
+
+
+.cart .products .product .removeProduct{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 0.5rem;
+    color: var(--button-background);
+    cursor: pointer;
+}

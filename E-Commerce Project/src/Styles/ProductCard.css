@@ -1,0 +1,77 @@
+.productCard{
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    width: 15rem;
+    min-width: 12rem;
+    min-height: 17.3rem;
+    max-height: 17.3rem;
+    margin: 1rem;
+    position: relative;
+    text-align: center;
+    border: var(--primary-color) 4px solid;
+    border-radius: 4px;
+    box-shadow: var(--box-shadow-heavy);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.productCard .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 0.5rem;
+    color: var(--text-color);
+}
+
+.productImg {
+    width: 100%;
+    height: 60%; /* يجعل الصورة تأخذ 60% من ارتفاع البطاقة */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.productImg img {
+    width: 100%;
+    height: auto; /* اجعل الارتفاع تلقائيًا لتجنب التشويه */
+    max-height: 100%; /* الحد الأقصى لارتفاع الصورة هو ارتفاع الحاوية */
+    object-fit: contain; /* الصورة تتكيف دون تمدد */
+}
+
+
+a{
+    color: var(--text-color);
+}
+.price-add{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.price-add h3{
+    color: var(--secondary-color);
+}
+.add-fav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.add-fav div{
+    border-radius: 50%;
+    padding: 0.3rem;
+    border: none;
+    outline: none;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: large;
+    transition: 0.5s ease;
+}
+.add-fav div:hover{
+    scale: 1.1;
+}

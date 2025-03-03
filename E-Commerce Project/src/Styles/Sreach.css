@@ -1,0 +1,36 @@
+.search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.search .searchBar{
+    display: flex;
+    width: 40%;
+}
+
+.search .searchBar .searchInput{
+    height: 40px;
+    border-radius: 4px;
+    width: 100%;
+    font-size: large;
+    border: var(--border-color) 1px solid;
+    outline: none;
+    padding-left: 0.5rem;
+}
+
+.search .searchBar .searchBtn{
+    height: 40px;
+    border-radius: 4px;
+    width: 10%;
+    cursor: pointer;
+    border: var(--border-color) 1px solid;
+    outline: none;
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+}
+.search .searchBar .searchBtn:hover{
+    background-color: var(--button-hover-background);
+}

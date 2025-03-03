@@ -1,0 +1,17 @@
+.shop{
+    padding: 2rem;
+}
+.shop .filters{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.shop .filters select{
+    height: 40px;
+    border-radius: 30px;
+    padding: 0.5rem;
+    font-size: large;
+    background-color: var(--header-background);
+}
